@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Camp</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="logo">
+                
+        </div>
+        <nav class="main-nav">
+            <a href="#home">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#message">Message Us</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero-section">
+            <h1>Hi <span id="welcome-message"></span>, Welcome to My Website!</h1>
+            <p>Currently I'm working as UI/UX Designer while pursuing my journey in code.</p>
+        </section>
+        <!-- PORTFOLIO SECTION -->
+        <section id="portfolio" class="portfolio-section">
+            <h2>Portfolio</h2>
+            <div class="portfolio-container">
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1661867011861-671e1cd85cc2?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Portfolio 1">
+                    <h3>Project Title 1</h3>
+                    <p>Brief description of Project 1.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1661451837931-d401b120d2f6?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Portfolio 2">
+                    <h3>Project Title 2</h3>
+                    <p>Brief description of Project 2.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1612180341933-aedf0a8c7315?q=80&w=1110&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Portfolio 3">
+                    <h3>Project Title 3</h3>
+                    <p>Brief description of Project 3.</p>
+                </div>
+            </div>
+        </section>
+        <!-- MESSAGE SECTION -->
+        <section id="message" class ="message-section">
+            <h2>Message Us</h2>
+            <div class="message-container">
+                <div class="input-container">
+                    <form id="form-pesan">
+                        <div class="nama">
+                            <label for="nama">Nama</label>
+                            <input type="text" name="nama" id="nama">
+                        </div>
+                        <div class="tanggal-lahir">
+                            <label for="tanggal-lahir">Tanggal Lahir</label>
+                            <input type="date" name="tanggal-lahir" id="tanggal-lahir">
+                        </div>
+                        <div class="jenis-kelamin">
+                            <p>Jenis Kelamin</p>
+                            <div class="radio-group">
+                                <input type="radio" name="jenis-kelamin" id="laki-laki" value="Laki-Laki" checked>
+                                <label for="laki-laki">Laki-Laki</label>
+                                <input type="radio" name="jenis-kelamin" id="perempuan" value="Perempuan">
+                                <label for="perempuan">Perempuan</label>
+                            </div>
+                        </div>
+                        <div class="pesan">
+                            <label for="pesan">Pesan</label>
+                            <textarea name="pesan" id="pesan" rows="8"></textarea>
+                        </div>
+                        <input type="button" value="Submit" onclick="submitForm()">
+                    </form>
+                </div>
+                <div class="output-container">
+                    <div style="display: flex; flex-direction: row; gap: 8px;">
+                        <p style="width: 120px;"><strong>Nama</strong></p>
+                        <p>: <span id="nama-output"></span></p>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 8px;">
+                        <p style="width: 120px;"><strong>Tanggal Lahir</strong></p>
+                        <p>: <span id="tanggal-lahir-output"></span></p>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 8px;">
+                        <p style="width: 120px;"><strong>Jenis Kelamin</strong></p>
+                        <p>: <span id="jenis-kelamin-output"></span></p>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 8px;">
+                        <p style="width: 120px;"><strong>Pesan</strong></p>
+                        <p>: <span id="pesan-output"></span></p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Created by Muammar Rizki</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

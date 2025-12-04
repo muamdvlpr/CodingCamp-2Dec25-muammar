@@ -1,0 +1,265 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}   
+
+p, label{
+    font-size: 16px;
+    line-height: 24px;
+    alignment-baseline: middle;
+}
+
+.logo{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: lightgray;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    border-bottom: 1px solid #e0e0e0;   
+    position: fixed;
+    width: 100%;
+    background-color: #ffff;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+.main-nav{
+    display: flex;
+    gap: 24px;
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 200px;
+    border-bottom: 1px solid #e0e0e0;
+    height: 480px;
+    margin-top: 80px;
+}
+
+/* Portfolio Section */
+.portfolio-section{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 80px 200px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.portfolio-container{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.portfolio-item{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.portfolio-item img{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Message Section */
+.message-section{
+    padding: 80px 200px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.message-container{
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}
+
+.input-container{
+    flex: 1;
+}
+
+.output-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+    gap: 12px;
+}
+
+.nama{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nama label{
+    width: 100px;
+}
+
+.nama input{
+    flex: 1;
+}
+
+.tanggal-lahir{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.tanggal-lahir label{
+    width: 100px;
+}
+
+.tanggal-lahir input{
+    flex: 1;
+}
+
+.jenis-kelamin{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+}
+
+.jenis-kelamin p{
+    width: 100px;
+}
+
+.radio-group{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.radio-group input{
+    margin: 0 4px 0 0;
+}  
+
+.radio-group label{
+    margin-right: 8px;
+}
+
+.pesan{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+}
+
+.pesan label{
+    width: 100px;
+}
+
+.pesan textarea{
+    flex: 1;
+}
+
+input[type="text"], input[type="date"], textarea {
+    padding: 12px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, textarea:focus {
+    border-color: #3d2fff;
+    outline: none;
+}
+
+input[type="button"]{
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+input[type="button"]:hover{
+    background-color: #45a049;
+}
+
+input[type="button"]:active{
+    background-color: #3e8e41;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    text-align: right;
+}
+
+.location-list{
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.circle{
+    width: 120px;
+    height: 120px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+}
