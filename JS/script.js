@@ -1,4 +1,4 @@
-/* welcomeMessage(); */
+welcomeMessage();
 
 function welcomeMessage() {
     let userResponse = prompt('Welcome to my portfolio website! Please enter your name:');
@@ -45,37 +45,3 @@ function submitForm() {
     document.getElementById('jenis-kelamin-output').textContent = jenisKelamin;
     document.getElementById('pesan-output').textContent = pesan;
 }
-
-let scrollInterval;
-
-function autoScrollPortfolio() {
-    const portfolioContainer = document.querySelector('.portfolio-container');
-    
-    if (!portfolioContainer) return;
-    
-    scrollInterval = setInterval(() => {
-        portfolioContainer.scrollLeft += 2; // scroll ke kanan
-        
-        // reset ke awal jika sudah sampai akhir
-        if (portfolioContainer.scrollLeft >= portfolioContainer.scrollWidth - portfolioContainer.clientWidth) {
-            portfolioContainer.scrollLeft = 0;
-        }
-    }, 30);
-}
-
-// pause on hover
-document.addEventListener('DOMContentLoaded', () => {
-    const portfolioContainer = document.querySelector('.portfolio-container');
-    
-    if (portfolioContainer) {
-        autoScrollPortfolio();
-        
-        portfolioContainer.addEventListener('mouseenter', () => {
-            clearInterval(scrollInterval);
-        });
-        
-        portfolioContainer.addEventListener('mouseleave', () => {
-            autoScrollPortfolio();
-        });
-    }
-});
