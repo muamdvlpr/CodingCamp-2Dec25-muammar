@@ -1,4 +1,4 @@
-welcomeMessage();
+/* welcomeMessage();
 
 function welcomeMessage() {
     let userResponse = prompt('Welcome to my portfolio website! Please enter your name:');
@@ -8,7 +8,7 @@ function welcomeMessage() {
     }
 
     document.getElementById('welcome-message').textContent = userResponse;
-}
+} */
 
 function submitForm() {
     const nama = document.getElementById('nama').value.trim();
@@ -45,3 +45,43 @@ function submitForm() {
     document.getElementById('jenis-kelamin-output').textContent = jenisKelamin;
     document.getElementById('pesan-output').textContent = pesan;
 }
+
+function showPrompt(callback) {
+  const modal = document.getElementById("promptModal");
+  const input = document.getElementById("promptInput");
+  const okBtn = document.getElementById("okBtn");
+  const cancelBtn = document.getElementById("cancelBtn");
+
+  modal.style.display = "flex";
+  input.value = "";
+  input.focus();
+
+  okBtn.onclick = () => {
+    modal.style.display = "none";
+    callback(input.value);
+
+    if (input.value === null || input.value.trim() === '') {
+        input.value = 'Guest';
+    }
+
+    document.getElementById('welcome-message').textContent = input.value;
+  };
+
+  cancelBtn.onclick = () => {
+    modal.style.display = "none";
+    callback(document.getElementById('welcome-message').textContent = 'Guest', null);
+  };
+}
+
+// ---------------
+// AUTO OPEN MODAL
+// ---------------
+window.addEventListener("DOMContentLoaded", () => {
+  showPrompt(function(result) {
+    if (result === null) {
+      console.log("User cancelled");
+    } else {
+      console.log("User name:", result);
+    }
+  });
+});

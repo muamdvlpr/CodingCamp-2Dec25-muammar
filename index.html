@@ -27,7 +27,7 @@
         <!-- HERO SECTION -->
         <section id="home" class="hero-section">
             <h1>Hi <span id="welcome-message"></span>, Welcome to My Website!</h1>
-            <p>Currently I'm working as UI/UX Designer while pursuing my journey in code.</p>
+            <p class="p-secondary">Currently I'm working as UI/UX Designer while pursuing my journey in code.</p>
         </section>
         <!-- PORTFOLIO SECTION -->
         <section id="portfolio" class="portfolio-section">
@@ -103,8 +103,26 @@
         </section>
     </main>
     <footer>
-        <p>Created by Muammar Rizki</p>
+        <p class="p-secondary">Copyright © 2025 Muammar</p>
     </footer>
+
+    <!-- MODAL DIALOG -->
+    <div id="promptModal" class="modal">
+        <div class="modal-content">
+            <h3>Welcome to my website!</h3>
+            <p>Enter your name first:</p>
+
+            <input type="text" id="promptInput" />
+
+            <div class="actions">
+            <button id="cancelBtn">Cancel</button>
+            <button id="okBtn">OK</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SCRIPT -->
     <script src="js/script.js"></script>
 </body>
 </html>

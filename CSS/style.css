@@ -33,7 +33,7 @@ p, label{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 32px;
+    padding: 16px 200px;
     border-bottom: 1px solid #e0e0e0;   
     position: fixed;
     width: 100%;
@@ -59,11 +59,10 @@ p, label{
 .hero-section{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
     justify-content: center;
     align-items: center;
     padding: 80px 200px;
-    border-bottom: 1px solid #e0e0e0;
     height: 480px;
     margin-top: 80px;
     background-image: url('https://images.unsplash.com/photo-1635776062043-223faf322554?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
@@ -76,7 +75,7 @@ p, label{
     flex-direction: column;
     gap: 32px;
     padding: 80px 200px;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e5e7eb;
 }
 
 .portfolio-container{
@@ -91,9 +90,10 @@ p, label{
     flex-direction: column;
     gap: 16px;
     align-items: center;
-    padding: 16px;
-    border: 1px solid #e0e0e0;
+    padding: 8px 8px 24px 8px;
+    border: 1px solid #f3f4f6;
     border-radius: 8px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-item img{
@@ -105,7 +105,6 @@ p, label{
 /* Message Section */
 .message-section{
     padding: 80px 200px;
-    border-bottom: 1px solid #e0e0e0;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -146,7 +145,7 @@ form {
 }
 
 .nama label{
-    width: 100px;
+    width: 120px;
 }
 
 .nama input{
@@ -162,7 +161,7 @@ form {
 }
 
 .tanggal-lahir label{
-    width: 100px;
+    width: 120px;
 }
 
 .tanggal-lahir input{
@@ -177,7 +176,7 @@ form {
 }
 
 .jenis-kelamin p{
-    width: 100px;
+    width: 120px;
 }
 
 .radio-group{
@@ -203,7 +202,7 @@ form {
 }
 
 .pesan label{
-    width: 100px;
+    width: 120px;
 }
 
 .pesan textarea{
@@ -217,7 +216,7 @@ input[type="text"], input[type="date"], textarea {
 }
 
 input[type="text"]:focus, input[type="date"]:focus, textarea:focus {
-    border-color: #3d2fff;
+    border-color: #059669;
     outline: none;
 }
 
@@ -225,20 +224,18 @@ input[type="button"]{
     padding: 12px 24px;
     border: none;
     border-radius: 4px;
-    background-color: #4CAF50;
+    background-color: #059669;
     color: white;
     cursor: pointer;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
 }
 
 input[type="button"]:hover{
-    background-color: #45a049;
+    background-color: #34d399;
 }
 
 input[type="button"]:active{
-    background-color: #3e8e41;
+    background-color: #064e3b;
 }
 
 footer{
@@ -247,6 +244,7 @@ footer{
     align-items: center;
     padding: 16px 32px;
     text-align: right;
+    background-color: #ecfdf5;
 }
 
 .location-list{
@@ -272,4 +270,61 @@ footer{
 
 .p-secondary{
     color: #6b7280;
+}
+
+h1 {
+    font-size: 56px;
+    line-height: 100%;
+}
+
+.hero-section p {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+/* Modal CSS */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 300px;
+}
+
+.actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+#okBtn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    background-color: #059669;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#cancelBtn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ef4444;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
 }
